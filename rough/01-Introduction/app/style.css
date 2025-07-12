@@ -1,0 +1,22 @@
+div {
+  font-size: 32px;
+  background-color: yellow;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+div h1 {
+  color: orange;
+  letter-spacing: 2px;
+}
+div h1:hover {
+  background-color: aquamarine;
+}
+div p {
+  color: orangered;
+  letter-spacing: 8px;
+}
+div p:hover {
+  background-color: aquamarine;
+}/*# sourceMappingURL=style.css.map */

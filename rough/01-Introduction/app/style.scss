@@ -1,0 +1,37 @@
+@import "./global";
+
+$bg-color1:green;
+
+@mixin flexProps{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin commonProps($par1){
+    letter-spacing:$par1
+}
+
+div{
+    font-size:16px + 16px;
+    background-color: $bg-color;
+    @include flexProps;
+
+    h1{
+        color:orange;
+        @include commonProps(2px);
+    }
+
+    h1:hover{
+        background-color: aquamarine;
+    }
+
+    p{
+        color: orangered;
+        @include commonProps(8px);
+    &:hover{
+        background-color: aquamarine;
+    }
+    }
+}
