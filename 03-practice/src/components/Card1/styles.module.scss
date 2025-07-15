@@ -1,0 +1,25 @@
+
+/* mixins */
+@mixin flexProps {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+@mixin dynamicMargin($margin) {
+  margin: $margin;
+}
+
+@mixin dynamicPadding($padding) {
+  padding: $padding;
+}
+
+/* variable */
+$primaryBgColor: #f0f0f0;
+
+.container {
+	@include flexProps;
+  background-color: $primaryBgColor;
+  @include dynamicMargin(40px);
+  @include dynamicPadding(20px);
+}

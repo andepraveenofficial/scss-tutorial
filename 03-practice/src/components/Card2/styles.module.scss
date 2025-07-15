@@ -1,0 +1,6 @@
+@use './variables' as vars;
+
+.container {
+  background-color: vars.$primaryBgColor;
+  padding: 20px + 20px;
+}

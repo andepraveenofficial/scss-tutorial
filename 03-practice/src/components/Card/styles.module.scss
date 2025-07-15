@@ -1,0 +1,25 @@
+/* variables */
+
+$primaryColor: green;
+$primaryBgColor: #f0f0f0;
+$secondaryColor: red;
+
+/* Nesting */
+.container {
+  background-color: $primaryBgColor;
+  color: $primaryColor;
+
+  h1 {
+    color: $primaryColor;
+  }
+
+  p {
+    color: $primaryColor;
+    background-color: $primaryBgColor;
+  }
+
+/* Hover effect -> & points to parent */
+  &:hover{
+    background-color: $secondaryColor;
+  }
+}
