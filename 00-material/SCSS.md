@@ -166,4 +166,15 @@ $primaryBgColor: #f0f0f0;
 }
 ```
 
+### 7. use
+
+```scss
+@use "./variables" as vars;
+
+.container {
+	background-color: vars.$primaryBgColor;
+	padding: 20px + 20px;
+}
+```
+
 </details>
