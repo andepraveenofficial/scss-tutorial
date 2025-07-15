@@ -1,0 +1,15 @@
+/* @import "./_colors.scss"; */
+@use "./_colors.scss" as colors;
+
+.container {
+  background-color: colors.$bgColor;
+
+  h1 {
+    color: colors.$primaryColor;
+  }
+
+  p {
+    color: colors.$secondaryColor;
+    background-color: colors.$bgColor;
+  }
+}
