@@ -1,6 +1,11 @@
 @use './variables' as vars;
 
+
+@function calculatePadding($padding) {
+	@return $padding * 2;
+}
+
 .container {
   background-color: vars.$primaryBgColor;
-  padding: 20px + 20px;
+  padding: calculatePadding(10px);
 }

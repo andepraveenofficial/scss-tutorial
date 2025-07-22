@@ -19,3 +19,5 @@
 
 1. variables
 2. nesting
+3. mixins
+4. functions

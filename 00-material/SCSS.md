@@ -37,6 +37,7 @@
 5. parameters
 6. operators
 7. use
+8. functions
 
 ### 1. variables
 
@@ -177,4 +178,16 @@ $primaryBgColor: #f0f0f0;
 }
 ```
 
+### 8. functions
+
+- Use `@function` and return a single value (not CSS rules).
+
+```scss
+@use "./variables" as vars;
+
+@function calculatePadding($padding) {
+	@return $padding * 2;
+}
+
 </details>
+```
